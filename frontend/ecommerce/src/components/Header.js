@@ -100,7 +100,9 @@ function Header() {
             <ul className="d-flex navbar-nav">
               <li className="nav-item">
                 <LinkContainer to="/cart">
-                  <Nav.Link className="navbar-link">Cart</Nav.Link>
+                  <Nav.Link>
+                    <i class="fa-solid fa-cart-arrow-down"></i>
+                  </Nav.Link>
                 </LinkContainer>
               </li>
             </ul>
