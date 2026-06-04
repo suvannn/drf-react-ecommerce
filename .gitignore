@@ -1,0 +1,8 @@
+env-ecommerce
+.pytest_cache
+.env
+**__pycache__/
+db.sqlite3
+schema.yml
+*-commands.cmd
+frontend/node_modules
