@@ -27,7 +27,7 @@ function Product({ product }) {
               className="text-decoration-none text-dark"
             >
               <Card.Title>
-                <strong>{product.product_name}</strong>
+                <p>{product.product_name}</p>
               </Card.Title>
             </Link>
 

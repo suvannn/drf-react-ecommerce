@@ -32,8 +32,10 @@ function ProductScreen(params) {
           <Message variant="danger">{error}</Message>
         ) : (
           <Row>
-            {/* IMAGE SIDE */}
-            <Col md={6} className="text-center">
+            <Col
+              md={6}
+              className="d-flex justify-content-center align-items-center"
+            >
               <Image
                 src={product.image}
                 alt={product.product_name}
@@ -42,7 +44,6 @@ function ProductScreen(params) {
               />
             </Col>
 
-            {/* DETAILS SIDE */}
             <Col md={6}>
               <ListGroup variant="flush">
                 <ListGroup.Item>
@@ -55,6 +56,12 @@ function ProductScreen(params) {
                     text={` from ${product.numReviews} reviews`}
                     color={"#f8e825"}
                   />
+                </ListGroup.Item>
+                <ListGroup.Item>
+                  <Row>
+                    <Col>Brand:</Col>
+                    <Col className="text-end">{product.product_brand}</Col>
+                  </Row>
                 </ListGroup.Item>
                 <ListGroup.Item>
                   <p style={{ textAlign: "justify", marginBottom: 0 }}>
