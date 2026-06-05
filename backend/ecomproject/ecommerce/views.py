@@ -80,7 +80,7 @@ def getUsers(request):
 def registerUser(request):
     data=request.data
     try:
-        user= User.objects.create(first_name=data['fname'],last_name=data['lname'],username=data['fname'],email=data['email'],password=make_password(data['password']))
+        user= User.objects.create(first_name=data['fname'],last_name=data['lname'],username=data['fname'],email=data['email'],password=make_password(data['password']), is_active=False)
       
         # generate token for sending mail
         email_subject="Activate Your Account"
